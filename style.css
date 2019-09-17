@@ -1,0 +1,308 @@
+.Galaxy{
+    width: 90%;
+}
+.all_ssylki{
+    display: block;
+    text-decoration: none;
+    color: #262c40;
+}
+.for_planj{
+    visibility: hidden;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to left, #fff, #cedff4);
+    text-align: center;
+}
+.menu{
+    z-index: 1;
+    font-family: 'Comfortaa', cursive;
+    position: fixed;
+    width: 100%;
+    top: 21px;
+    left: 10px;
+    height: 60px;
+    background:linear-gradient(5deg, #5960ea, #0057b6);
+    box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+    color: #fdfbfc;
+}
+   .main-menu {
+    position: fixed;
+    border-radius: 10px;
+    height: 100vh;
+    top: 21px;
+    width: 196px;
+    left: -200px;
+    background: #1a549f;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    transition: 0.2s;
+  }
+  .menu_is-open {
+      transform: translateX(200px);
+  }
+.menu-btn {
+    color: #cedff4;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 190px;
+    background: #1a549f;
+  }
+.menu_a{
+    border-radius: 5px;
+    visibility: visible;
+    color: white;
+    text-decoration: none;
+    padding: 14px 0;
+    margin: 10px 0;
+    display: block;
+    width: 190px;
+    height: 30px;
+    text-align: top;
+    background-color:  #498dde;
+    transition: 0.2s;
+}
+.menu_a:hover{
+    background-color: #0d356c;
+}
+.nametag{
+    width: 190px;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+.menu_ic{
+    visibility: hidden;
+}
+.box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu_readmore{
+    width: 100%;
+    background-color: #e9f1f9;
+    position: relative;
+    top: 97%;
+    height: 7%;
+    box-shadow:  0 -20px 40px rgba(0, 0, 0, 0.25);
+}
+.readmore{
+    text-decoration: none;
+    color: #262c40;
+}
+.hamburger-close{
+    padding: 20% 32%;
+}
+.hamburger-open{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    height: 140px;
+    background-color: #498dde;
+    color: #fdfbfc;
+    text-decoration: none;
+    border-radius: 10px;
+}
+a[href^="tel:"]{
+    color: #c84f4f;
+    text-decoration: none;
+}
+.for_planj{
+    visibility: hidden;
+}
+img{
+    width: 80%;
+    border-radius: 10px;
+}
+@media (min-width: 768px){
+    .for_planj{
+        visibility: visible;
+        color: white;
+        text-decoration: none;
+        margin: 15px 5px;
+        display: block;
+        border-radius: 50%;
+        width: 80%;
+        height: 50px;
+        text-align: center;
+        background-color:  #498dde;
+        transition: 0.2s;
+    }
+    .menu_is-open{
+        transform: translateX(0px);
+    }
+    body{
+        font-family: 'Montserrat', sans-serif;
+        background-color: rgb(214, 214, 214);
+        text-align: center;
+    }
+    .menu_ic{
+        position: relative;
+        top:30%;
+        visibility: visible;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        top: 0;
+    }
+    .main-menu {
+        position: fixed;
+        border-radius: 10px;
+        height: 100vh;
+        top: 0px;
+        width: 65px;
+        left:0;
+        background: #1a549f;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+      }
+    .menu-btn {
+        display: none;
+      }
+    .menu_a{
+        position: relative;
+        visibility: hidden;
+        color: white;
+        text-decoration: none;
+        margin: 0px 1px;
+        display: block;
+        width: 80%;
+        height: 30px;
+        text-align: center;
+        background-color:  #498dde;
+        transition: 0.2s;
+    }
+    .menu_a_vis{
+        position: relative;
+        top: -65px;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px; 
+        display: block;
+        height: 40px;
+        background-color:  #498dde;
+        transition: 0.2s;
+        width: 180px;
+        visibility: visible;
+    }
+    .menu_a_vis_twice{
+        visibility: hidden;
+        transition: 0.2s;
+    }
+    .nametag{
+        position: relative;
+        top:0px;
+    }
+    img{
+        width: 40%;
+    }
+}
+@media(min-width:1366px){
+    .box{
+        width: 80%;
+    }
+    .for_planj{
+        display: none;
+    }
+    .hamburger-close{
+        display: none;
+    }
+    .hamburger-open{
+        display: none;
+    }
+    .main-menu{
+        position: relative;
+        width: 100%;
+        height: 90%;
+        background-color: #266dc2;
+    }
+    .menu{
+        left:0;
+        padding: 5px;
+        text-align: left;
+        position: fixed;
+        width: 20%;
+        height: 100vh;
+        background:linear-gradient(5deg, #5960ea, #0057b6);
+    }
+    .menu-btn{
+        display: none;
+    }
+    .menu_a{
+        visibility: visible;
+        border-radius: 10px;
+        margin: 35px 0;
+        left: 10%;
+        top: 10%;
+        background-color: #498dde;
+    }
+    .menu_a_vis{
+        width: 95%;
+        visibility: visible;
+        border-radius: 10px;
+        left: 5%;
+        top: 10%;
+        background-color: #498dde;
+    }
+    .menu_a:hover{
+        background-color: #0d356c;
+        left:2%;
+        width: 95%;
+    }
+    .menu_ic{
+        display: none;
+    }
+    .nametag{
+        top: -30px;
+        padding: 10% 10%;
+        width: 100%;
+        height: 60px;
+        text-align:left;
+        font-family: 'Exo 2', sans-serif;
+        transition: 0.5s;
+    }
+    .nametag:hover{
+        padding: 10% 0;
+        text-align: center;
+    }
+    body{
+        color: #fdfbfc;
+        background: linear-gradient(to left, #fff, #cedff4);
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    img{
+        width: 60%;
+        display: block;
+        margin: 10px 20%;
+        transition: 0.2s;
+    }
+    img:hover{
+        position: relative;
+        margin: 10px 10%;
+        width: 80%;
+    }
+    iframe{
+        height: 500px;
+    }
+    footer{
+        position: relative;
+        left: 21%;
+        width: 70%;
+    }
+    .Galaxy{
+        margin: 0 5%;
+    }
+    .Galaxy:hover{
+        margin: 0;
+        width: 100%;
+    }
+}
